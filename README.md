@@ -14,20 +14,25 @@ Install Leiningen
     
 ## Run scripts
 
-Cascading versions
+### Cascading versions
+(adopted from https://github.com/elasticsearch/elasticsearch-hadoop#cascading)
 
-    # Works, but exception at the end (see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/src/trial/input.clj))
+Input works, but exception at the end, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/input.clj)
+    
     lein run -m trial.input
 
-    # Works perfectly (see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/src/trial/output.clj))
+Ouptut works perfectly, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/output.clj)
+    
     lein run -m trial.output
 
-Cascalog versions
+### Cascalog versions
 
-    # Works perfectly (see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/src/trial/cascalog/output.clj))
+Input works perfectly, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/cascalog/input.clj)
+    
     lein with-profile cascalog run -m trial.cascalog.input
 
-    # Doesn't work (see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/src/trial/cascalog/input.clj))
+Ouptut doesn't work, see [output](https://github.com/jeroenvandijk/elasticsearch-hadoop-trial/blob/master/src/trial/cascalog/output.clj)
+    
     lein with-profile cascalog run -m trial.cascalog.output
 
 ## License
